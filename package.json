@@ -1,0 +1,24 @@
+{
+  "name": "design-pilot-agent-demo",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/preview.js",
+    "test": "node --test",
+    "build": "node scripts/build-demo.js",
+    "dev": "node scripts/preview.js",
+    "pretest": "npm run build",
+    "prestart": "npm run build"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@gouvfr/dsfr": "1.15.4"
+  },
+  "devDependencies": {
+    "axe-core": "4.10.3",
+    "jsdom": "26.1.0"
+  }
+}
